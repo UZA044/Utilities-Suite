@@ -21,35 +21,16 @@ public class allocater {
      * 1024 bytes. If it is deallocate, the third argument will be the reference id
      * to deallocate from memory.
      * 
-     * NOTE: you should read the process input from taskB.txt instead of putting it
-     * in the Java file
-     */
-    //private static int[][] alloc = { /* memory size is 1024 */
-	    // Example 1
-	    /*
-	     * {1, 1, 30}, //Process 1 is allocating 30 bytes {2, 1, 40}, //Process 2 is
-	     * allocating 40 bytes {3, 1, 50}, {4, 2, 1}
-	     */
-
-	    // Example 2
-	    /*
-	     * {1, 1, 300}, {2, 1, 150}, {3, 1, 200}, {4, 2, 1}
-	     */
-
-	    // Example 3: more processes
-
-	    //{ 1, 1, 150 }, { 2, 1, 20 }, { 3, 1, 150 }, { 4, 1, 20 }, { 5, 1, 150 }, { 6, 1, 20 }, { 7, 1, 150 },
-	    //{ 8, 1, 20 }, { 9, 1, 150 }, { 10, 1, 20 }, { 11, 1, 150 }, { 12, 1, 20 }, { 13, 2, 2 }, { 14, 2, 4 },
-	    //{ 15, 2, 6 }, { 16, 2, 8 }, { 17, 2, 10 }, { 18, 2, 12 }, { 19, 1, 20 }, { 20, 1, 21 }, { 21, 1, 125 }
+     *
 
     //};
     /**
-     * This method reads through the taskB.csv file and initializes a 
+     * This method reads through the csv file and initializes a 
      * array to insert list of processes and data into so that it can
      * be ready for a memory allocation simulation.
      */
     private static int[][] process_allocation(){
-    	String filePath = "taskB.csv";
+    	String filePath = "memory_data.csv";
     	File content= new File(filePath);
     	String file_content="";
     	int rowcount =0;

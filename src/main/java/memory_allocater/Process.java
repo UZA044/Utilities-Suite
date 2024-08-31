@@ -14,7 +14,6 @@ public class Process {
     // Default constructor
     private Process() {
     }
-
     /**
      *
      * @param reference_number A reference number (a unique identifier for that
