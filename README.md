@@ -1,4 +1,4 @@
-# Java System Utilities Coursework
+# Java System Utilities Suite
 
 ## Overview
 
